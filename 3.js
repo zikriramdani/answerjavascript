@@ -44,13 +44,26 @@ while (c < 79) {
         else if (c == 4) {
             one.innerHTML = str + "<br/>" + x + " " + "and" + " " + x + " " + "are Match<br/><br/>";
         }
+    }
+    x += 2;
+}
+
+// 15
+var two = document.getElementById("15");
+var c = 0;
+var x = 11;
+var str;
+
+while (c < 79) {
+    if (isEmirp(x)) {
+        c += 1;
 
         // 15
-        else if (c == 1) {
+        if (c == 1) {
             str = "<h3>15</h3>" + x + " " + "and" + " " + x + " " + "are Match";
         }
         else if (c < 10) {
-            str += "<br/>" + x + " " + "and" + " " + x + " " + "are Match";
+            str+= "<br/>" + x + " " + "and" + " " + x + " " + "are Match";
         }
         else if (c == 10) {
             two.innerHTML = str + "<br/>" + x + " " + "and" + " " + x + " " + "are Match<br/><br/>";
